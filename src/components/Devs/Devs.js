@@ -12,7 +12,7 @@ const Devs = (props) => {
       setLoading(true);
       const apiHost = process.env.REACT_APP_API_HOST || "http://localhost:8080"
       try {
-        const res = await axios.get(`${apiHost}/api/developers`) 
+        const res = await axios.get(`${apiHost}/api/devs`) 
         console.log(res.data);
         setDevs(res.data);
         setLoading(false);

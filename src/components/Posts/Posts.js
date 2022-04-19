@@ -12,20 +12,20 @@ const Posts = (props) => {
             setLoading(true);
             const apiHost = process.env.REACT_APP_API_HOST || "http://localhost:8080"
             try {
-                const res = await axios.get(`${apiHost}/api/posts`) 
+                const res = await axios.get(`${apiHost}/api/post`) 
                 console.log(res.data);
-                setDevs(res.data);
+                setPosts(res.data);
                 setLoading(false);
               } catch (err) {
                 console.log(err.message);
                 console.log(err.res)
               }
-        }
+            }
         _getPosts();
     },[setLoading,setPosts])
 
     const displayPosts = () =>{
-        return posts.map(post => <Post post ={post} key={post.id}/>)
+        return posts.map(Post => <Post post ={Post} key={Post.id}/>)
     }
 
     return loading ? (

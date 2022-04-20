@@ -35,7 +35,7 @@ const NavBar = (props) => {
           justifyContent: 'flex-end'
         }}>
           <NavButton to="/" label="home"/>
-          <NavButton to="/posts" label="Posts"/>
+          <NavButton to="/stuffs" label="Stuffs"/>
           <NavButton to="/lockers" label="Lockers"/>
           <NavButton to="/developers" label="Devs"/>
         </div>

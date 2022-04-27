@@ -37,7 +37,7 @@ const NavBar = (props) => {
           <NavButton to="/" label="home"/>
           <NavButton to="/stuffs" label="Stuffs"/>
           <NavButton to="/lockers" label="Lockers"/>
-          <NavButton to="/developers" label="Devs"/>
+          <NavButton to="/students" label="Students"/>
         </div>
     </nav> 
   )

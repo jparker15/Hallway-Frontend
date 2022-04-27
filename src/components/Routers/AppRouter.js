@@ -5,8 +5,9 @@ import {
 } from "react-router-dom";
 import NavBar from '../Navbar/NavBar';
 import Home from '../Home/Home';
-import Devs from '../Devs/Devs'
+import Students from '../Students/Students';
 import Lockers from '../Lockers/Lockers';
+import Stuffs from '../Stuffs/Stuffs';
 
 const AppRouter = () => {
   return (
@@ -16,11 +17,8 @@ const AppRouter = () => {
 
         <Routes>
           <Route path="/" exact element={<Home />}/>
-            
-          {/* <Route path="/posts">
-            <h1>posts</h1>
-            </Route> */}
-            <Route path="/developers" element={<Devs />} />
+          <Route path="/students" element={<Students />} />
+            <Route path="/stuffs" element={<Stuffs />} />
             <Route path="/lockers" element={<Lockers />} />
         </Routes>
       </div>

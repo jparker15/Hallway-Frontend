@@ -25,7 +25,7 @@ const Stuffs = (props) => {
     },[setLoading,setStuffs])
 
     const displayStuffs = () =>{
-        return stuffs.map(Stuff => <Stuff stuff ={Stuff} key={Stuff.id}/>)
+        return stuffs.map(stuff => <Stuff stuff ={stuff} key={stuff.id}/>)
     }
 
     return loading ? (
@@ -43,4 +43,4 @@ const Stuffs = (props) => {
       )
 }
 
-export default Stuffs
+export default Stuffs;
